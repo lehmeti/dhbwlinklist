@@ -1,0 +1,192 @@
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <title>DHBW Lörrach Linkliste</title>
+    <style>
+        h1 {
+            color: darkgrey; 
+            font-family: "GenerisSansW01-Regular", serif;
+        }
+        h2 {
+            color:red; 
+            font-family: "GenerisSansW01-Regular", serif;
+        }
+        h3 {
+            margin-top: -1em;
+        }
+        html {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            max-width: 80%;
+            padding-bottom: 5em;
+        }
+        p {
+            color:black; 
+            font-family: "GenerisSansW01-Regular", sans-serif;
+        }
+        a {
+            color:blue;
+            text-decoration: underline;
+        }
+        form {
+            display: flex;
+            justify-content:left;
+        }
+        input {
+            width: 25em;
+        }
+        .header {
+            display: flex; 
+            align-content: flex-start;
+        }
+        .black {
+            color: black; 
+            font-family: "Arial", sans-serif;
+        }
+        .red {
+            color: red; 
+            font-family: "Arial", sans-serif;
+        }
+        .linklist {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>
+    <span class="black">DH</span><span class="red">BW</span><span class="black"> Lörrach</span> Linkliste
+</h1>
+<h3>Informationen, Dokumente und Links für Studenten und jene die es werden wollen</h3>
+<h4>Version 1.0.1 @ 03.07.2020</h4>
+
+<p>Das hier ist eine Link-Liste um auf der DHBW-Website schnell Dinge zu finden, weil
+niemand Lust hat, stundenlang auf der genialen übersichtlichen neuen Website zu suchen. :)</p>
+
+<hr>
+
+<h2>Online-Stundenpläne</h2>
+
+<p>Gib einfach deinen Kurs ein und klick auf "Stundenplan anzeigen".</p>
+
+<script>
+    function openInputLink() {
+        let kurs = document.getElementById("linkInput").value;
+        if(kurs === '') {
+            return;
+        } else {
+            let prefix = "https://webmail.dhbw-loerrach.de/owa/calendar/kal-";
+            let suffix = "@dhbw-loerrach.de/Kalender/calendar.html";
+            let link = prefix.concat(kurs, suffix);
+            window.open(link, '_blank');
+        }
+    }
+</script>
+
+<form>
+    <input id="linkInput" type="text" value="" placeholder="Gib hier deinen Kurs ein">
+    <button onclick="openInputLink()">Studenplan anzeigen</button>
+</form>
+
+<hr>
+
+<h2>Direkt-Links zu Tools</h2>
+
+<div class="linklist">
+    <a href="https://webmail.dhbw-loerrach.de" target="_blank">Webmail</a>
+    <a href="https://moodle.dhbw-loerrach.de" target="_blank">Moodle</a>
+    <a href="https://dualis.dhbw.de" target="_blank">Dualis (Notenportal)</a>
+    <a href="https://bbb.dhbw-loerrach.de" target="_blank">BigBlueButton</a>
+</div>
+
+<hr>
+
+<h2>Dokumente zum Studiengang</h2>
+
+<div class="linklist">
+    <a href="https://dhbw-loerrach.de/informatik/dokumente-links" target="_blank">Dokumente Informatik</a>
+    <a href="https://dhbw-loerrach.de/en/wi/dokumente-links" target="_blank">Dokumente Wirtschaftsinformatik</a>
+</div>
+
+<ul>
+    <li>Flyer Informatik / Wirtschaftsinformatik</li>
+    <li>Studienvertrag</li>
+    <li>Studierende:</li>
+    <ul>
+        <li>Blockpläne</li>
+        <li>Studienpläne</li>
+        <li>Vorlesungspläne</li>
+        <li>Anmeldung Schwerpunkte</li>
+        <li>Grundordnung</li>
+        <li>Prüfungsverordnung (StuPro)</li>
+        <li>Modulbeschreibung Informatik</li>
+    </ul>
+</ul>
+
+<hr>	
+
+<h2>Bibliotheken und Datenbanken</h2>
+
+<div class="linklist">
+    <a href="https://dhbw-loerrach.de/bibliothek/kurz-vorgestellt" target="_blank">Bibliothek & Datenbanken</a>
+    <a href="https://bsz.ibs-bw.de/aDISWeb/app?service=direct/0/Home/$DirectLink&sp=SOPAC18" target="_blank">Online-Katalog</a>
+</div>
+
+<hr>
+
+<h2>Informationen zu Wissenschatliches Arbeiten am SZI</h2>
+
+<a href="https://dhbw-loerrach.de/szi-projektarbeiten" target="_blank">SZI Projektarbeiten</a>
+
+<ul>
+    <li>Anmeldung der Themen</li>
+    <li>DHBW Betreuer/ Gutachter/ Wunschbetreuer</li>
+    <li>Vorlagen für Projektarbeiten</li>
+    <li>Abgabe der Arbeiten</li>
+    <li>Vorlagen zur Begutachtung</li>
+    <li>Prüfungsverordnung (StuPro)</li>
+</ul>
+
+<hr>	
+
+<h2>Informationen für duale Partner</h2>
+
+<a href="https://dhbw-loerrach.de/szi-duale-partner" target="_blank">Duale Partner - Übersicht</a>
+
+<ul>
+    <li>Blockpläne</li>
+    <li>Studienpläne</li>
+</ul>
+
+<hr>
+
+<h2>IT-Services:</h2>
+
+<p>In Moodle befindet sich unter: meine Kurse ->Services & Einrichtungen ->SE-It.Services 
+Informationen zu:</p>
+
+<ul>
+    <li>Account Passwort</li>
+    <li>dhbw-Karte</li>
+    <li>Dienste</li>
+    <li>Drucker & Kopierer</li>
+    <li>E-Mail und Kalender</li>
+    <li>Software Angebote</li>
+    <li>Verschlüsselte ZIP Archive</li>
+    <li>WLAN</li>
+    <li>Zertifikate</li>
+</ul>
+
+<hr>
+
+<h2>Studienvorbereitung:</h2>
+
+<a href="https://studienstart.dhbw.de" target="_blank">studienstart.dhbw.de</a>
+
+</body>
+</html>
