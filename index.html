@@ -15,17 +15,17 @@
 
 <p>Das hier ist eine Link-Liste um auf der DHBW-Website schnell wichtige Dokumente und Tools zu finden.</p>
 
-<p>Verbesserungsvorschläge? <a href="https://github.com/lehmeti/dhbwlinklist" target="_blank">Hier geht's zum GitHub Repository!</a></p>
+<p class="hideonmobile">Verbesserungsvorschläge? <a href="https://github.com/lehmeti/dhbwlinklist" target="_blank">Hier geht's zum GitHub Repository!</a></p>
 
 <hr>
 
 <h2>Online-Stundenpläne</h2>
 
-<p>Gib einfach deinen Kurs ein und klick auf "Stundenplan anzeigen".</p>
+<p class="hideonmobile">Gib einfach deinen Kurs ein und klick auf "Stundenplan anzeigen".</p>
 
-<form>
-    <input id="linkInput" type="text" value="" placeholder="Gib hier deinen Kurs ein">
-    <button onclick="openInputLink()">Studenplan anzeigen</button>
+<form class="formTimeTable">
+    <input class="inputTimeTable" id="linkInput" type="text" value="" placeholder="Gib hier deinen Kurs ein" autocomplete="one-time-code">
+    <button class="btnTimeTable" onclick="openInputLink()">Studenplan anzeigen</button>
 </form>
 
 <hr>
@@ -115,6 +115,8 @@
     <li>WLAN</li>
     <li>Zertifikate</li>
 </ul>
+
+<a href="https://moodle.dhbw-loerrach.de" target="_blank">Moodle</a>
 
 <hr>
 

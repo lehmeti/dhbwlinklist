@@ -28,6 +28,11 @@ p {
     font-family: "GenerisSansW01-Regular", sans-serif;
 }
 
+hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 a {
     color:blue;
     text-decoration: underline;
@@ -63,6 +68,29 @@ input {
     align-items: center;
 }
 
+.inputTimeTable {
+    font-size: 18px;
+    margin-right: 1em;
+    padding: .5em;
+    border: 3px solid white;
+    color: grey;
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.5),
+            0 0 16px rgba(0,0,0,0.1);
+}
+
+.btnTimeTable {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btnTimeTable:hover {
+    background-color: pink;
+    color: black;
+}
+
 .nodecoration {
     color: default;
     text-decoration: none;
@@ -78,6 +106,15 @@ input {
         font-size: 18px;
     }
 
+    hr {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    li {
+        margin-top: 5px;
+    }
+
     .linklist {
         flex-direction: column;
         justify-content: space-between;
@@ -86,4 +123,22 @@ input {
     .linklist a {
         margin-bottom: 1em;
     }
+
+    form {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .inputTimeTable {
+        height: 2.5em;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .btnTimeTable {
+        height: 2em;
+        width: 100%;
+    }
+
+    
 }
