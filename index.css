@@ -38,6 +38,10 @@ a {
     text-decoration: underline;
 }
 
+li {
+    margin-top: 5px;
+}
+
 form {
     display: flex;
     justify-content:left;
@@ -111,10 +115,6 @@ input {
         margin-bottom: 2em;
     }
 
-    li {
-        margin-top: 5px;
-    }
-
     .linklist {
         flex-direction: column;
         justify-content: space-between;
@@ -127,6 +127,14 @@ input {
     form {
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    ul {
+        margin-left: -1em;
+    }
+
+    ul ul li {
+        margin-left: -.1em;
     }
 
     .inputTimeTable {
