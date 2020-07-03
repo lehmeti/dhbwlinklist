@@ -16,6 +16,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "GenerisSansW01-Regular", sans-serif;
 }
 
 body {
@@ -25,7 +26,6 @@ body {
 
 p {
     color:black; 
-    font-family: "GenerisSansW01-Regular", sans-serif;
 }
 
 hr {
