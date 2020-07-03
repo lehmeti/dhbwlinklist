@@ -39,7 +39,7 @@ form {
 }
 
 input {
-    width: 25em;
+    max-width: 25em;
 }
 
 .header {
@@ -66,4 +66,24 @@ input {
 .nodecoration {
     color: default;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hideonmobile {
+        display: none;
+    }
+
+    a, p, ul {
+        font-size: 18px;
+    }
+
+    .linklist {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .linklist a {
+        margin-bottom: 1em;
+    }
 }
