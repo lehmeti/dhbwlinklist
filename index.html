@@ -12,8 +12,7 @@
 <h3>Informationen, Dokumente und Links für Studenten der <span class="black">DH</span><span class="red">BW</span><span class="black"> Lörrach</span> und jene die es werden wollen</h3>
 <h4>Version 1.0.2 @ 03.07.2020</h4>
 
-<p>Das hier ist eine Link-Liste um auf der DHBW-Website schnell Dinge zu finden, weil
-niemand Lust hat, stundenlang auf der genialen übersichtlichen neuen Website zu suchen. :)</p>
+<p>Das hier ist eine Link-Liste um auf der DHBW-Website schnell wichtige Dokumente und Tools zu finden.</p>
 
 <p>Verbesserungsvorschläge? <a href="https://github.com/lehmeti/dhbwlinklist" target="_blank">Hier geht's zum GitHub Repository!</a></p>
 
@@ -23,19 +22,7 @@ niemand Lust hat, stundenlang auf der genialen übersichtlichen neuen Website zu
 
 <p>Gib einfach deinen Kurs ein und klick auf "Stundenplan anzeigen".</p>
 
-<script>
-    function openInputLink() {
-        let kurs = document.getElementById("linkInput").value;
-        if(kurs === '') {
-            return;
-        } else {
-            let prefix = "https://webmail.dhbw-loerrach.de/owa/calendar/kal-";
-            let suffix = "@dhbw-loerrach.de/Kalender/calendar.html";
-            let link = prefix.concat(kurs, suffix);
-            window.open(link, '_blank');
-        }
-    }
-</script>
+<script src="index.js"></script>
 
 <form>
     <input id="linkInput" type="text" value="" placeholder="Gib hier deinen Kurs ein">
